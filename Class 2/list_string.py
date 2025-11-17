@@ -122,3 +122,23 @@ def reverse3(nums):
   nums[0],nums[2]=nums[2],nums[0]
   return nums
 
+#sum2
+def sum2(nums):
+  if  len(nums)>=2:
+    return nums[0]+nums[1]
+  elif len(nums)==1:
+    return nums[0]
+  else:
+    return 0
+
+#Logic-1
+#cigar-party
+def cigar_party(cigars, is_weekend):
+  if is_weekend:
+    return cigars>=40
+  else:
+    return 40<=cigars<=60
+
+
+
+
