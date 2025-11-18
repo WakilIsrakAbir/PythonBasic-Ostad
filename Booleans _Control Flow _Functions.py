@@ -27,3 +27,12 @@ def test(name,age):
     print(name,age)
 test("Abir",30)
 
+#Write a program to create function calculation() 
+#such that it can accepet two variables and 
+#calculate addition and substruction in a single return call.
+def calculation(a,b):
+    addition=a+b
+    substruction=a-b
+    return addition
+response=calculation(10,25)
+print(response)
