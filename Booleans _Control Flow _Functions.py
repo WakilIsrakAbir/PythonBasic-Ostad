@@ -33,6 +33,24 @@ test("Abir",30)
 def calculation(a,b):
     addition=a+b
     substruction=a-b
-    return addition
+    return addition,substruction
 response=calculation(10,25)
 print(response)
+
+#Write a program to create a recursive function to 
+#calculate the sum of number from 0 to 5 output is 15
+#A recursive function is a function that calls itself again and again
+
+def addition(number):
+    if number:
+        return number+ addition(number-1)
+    else:
+        return 0
+response=addition(5)
+print(response)
+
+####Explanation:
+#initial call:  number=5
+#addition(5)
+#Since number is true(ie. non-zero),we proceed to the return statement
+#we ne to compute 5+addition(4)
